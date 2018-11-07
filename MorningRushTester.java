@@ -40,12 +40,13 @@ public class MorningRushTester
                 --gulps;
             }
         }
-        DrinkCoffee dc = new DrinkCoffee(5);
+        DrinkCoffee dc = new DrinkCoffee(initialGulps);
         Timer t = new Timer(DELAY,dc); // refractor-extract constant-DELAY- create private final
         t.start();
         
         
-        //JOptionPane.showMessageDialog(null, "Make another?");
+        JOptionPane.showMessageDialog(null, "Just about to go to school?");
+        System.out.println("Just about to go to school");
         System.exit(0);
 
     }
